@@ -62,13 +62,13 @@
   }
 
   a:any-link {
-    color: black;
+    color: #89a042;
     text-decoration-line: none;
     cursor: auto;
 }
 
 a:any-link:hover {
-    color: #89a042;
+    color: #b6c099;
     text-decoration-line: none;
     cursor: auto;
 }

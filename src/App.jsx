@@ -4,18 +4,28 @@ import { Link, useRoutes } from "react-router-dom";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import { useState } from "react";
+import Catalog from "./pages/Catalog";
 
-function App() {
+const App = () => {
   const [authenticated, setAuthenticated] = useState(false);
+
+  const manageSession = () => {
+    setAuthenticated(!authenticated);
+    console.log("it worked?");
+  };
 
   let element = useRoutes([
     {
       path: "/",
-      element: <Login />,
+      element: <Login loginUser={manageSession} />,
     },
     {
       path: "/signup",
       element: <SignUp />,
+    },
+    {
+      path: "/catalog",
+      element: <Catalog />,
     },
   ]);
 
@@ -30,7 +40,9 @@ function App() {
           {authenticated ? (
             <li>
               <Link to="/">
-                <h6 className="login-link">Logout</h6>
+                <h6 className="login-link" onClick={manageSession}>
+                  Logout
+                </h6>
               </Link>
             </li>
           ) : (
@@ -45,6 +57,6 @@ function App() {
       {element}
     </div>
   );
-}
+};
 
 export default App;
