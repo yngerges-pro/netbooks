@@ -3,7 +3,7 @@
     font-weight:100; 
     font-style:normal;
     font-size: calc(10px + 1vmin);
-    color: black;
+    color: white;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@
     left: 0;
     width: 100vw;
 
-    background-color: #646cff;
+    background-color: #000000;
 
     font-size: 25px;
 
@@ -54,23 +54,43 @@
     background-color: #1a1a1a;
     color:white;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition:  0.3s;
   }
   button:hover {
-    border-color: #f6f6f6;
-    background-color: black;
+    color: black;
+    background-color: #b5d559;
   }
 
   a:any-link {
     color: black;
     text-decoration-line: none;
     cursor: auto;
-    transition: 0.25s;
 }
+
 a:any-link:hover {
-    color: white;
+    color: #89a042;
     text-decoration-line: none;
     cursor: auto;
 }
 
+.login-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    padding: 0.7em;
+    border-radius: 10px;
+    background-color: #b5d559;
+    transition: 0.4s;
+}
+
+.login-link:hover {
+    color: black;
+    padding: 0.7em;
+    border-radius: 10px;
+    background-color: #859c40;
+}
+
+span {
+    color: red;
+}
  

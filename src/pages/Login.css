@@ -1,10 +1,11 @@
 .Login {
     padding-top: 50px;
-    width: 100vw;
+    color: black;
+    /* width: 100vw;
     height: 100vw;
 
     overflow-y: hidden;
-    background-color: #a49baba3;
+    background-color: #a49baba3; */
   }
 
 .login-container {
@@ -48,6 +49,18 @@
   color: rgba(0, 0, 0, 0.87);
   border-radius: 0.28571429rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
-  transition: color 0.1s ease, border-color 0.1s ease;
+  transition: color 0.1s ease, border-color 0.4s ease;
+}
+
+.duo {
+    max-width: 38.5%;
+  padding: 0.67857143em 1em;
+  font-size: 1em;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  transition: color 0.1s ease, border-color 0.4s ease;
 }
 

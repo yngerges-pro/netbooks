@@ -2,12 +2,20 @@ import React from "react";
 import "./App.css";
 import { Link, useRoutes } from "react-router-dom";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import { useState } from "react";
 
 function App() {
+  const [authenticated, setAuthenticated] = useState(false);
+
   let element = useRoutes([
     {
       path: "/",
       element: <Login />,
+    },
+    {
+      path: "/signup",
+      element: <SignUp />,
     },
   ]);
 
@@ -19,11 +27,19 @@ function App() {
         </div>
 
         <ul className="nav-links">
-          <Link className="link" to="/">
+          {authenticated ? (
             <li>
-              <h6>Login</h6>
+              <Link to="/">
+                <h6 className="login-link">Logout</h6>
+              </Link>
             </li>
-          </Link>
+          ) : (
+            <li>
+              <Link to="/">
+                <h6 className="login-link">Login</h6>
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
       {element}
