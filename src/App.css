@@ -10,6 +10,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
+    background-color: rgb(234, 240, 237);
+    height: 100px;
 
   }
 
@@ -54,7 +57,20 @@
     transition: border-color 0.25s;
   }
   button:hover {
-    border-color: #646cff;
+    border-color: #f6f6f6;
+    background-color: black;
   }
+
+  a:any-link {
+    color: black;
+    text-decoration-line: none;
+    cursor: auto;
+    transition: 0.25s;
+}
+a:any-link:hover {
+    color: white;
+    text-decoration-line: none;
+    cursor: auto;
+}
 
  
